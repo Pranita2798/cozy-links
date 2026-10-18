@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cozy Room Edit Finds | Shop the latest cozy home finds</title>
+<meta name="description" content="Affordable home decor for every room and every season. Shop the latest cozy home finds from @cozyroomeditfinds.">
+<meta name="theme-color" content="#f6efe4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#2b231d" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cozy Room Edit Finds">
+<meta property="og:description" content="Affordable home decor for every room and every season.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23efe4d2' stroke='%23b08d57' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='%235a4334'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --cream: #f6efe4;
+    --linen: #fbf7f0;
+    --beige: #e8dcc8;
+    --sand: #d9c7ab;
+    --wood: #8a6a4f;
+    --wood-dark: #5a4334;
+    --brass: #b08d57;
+    --ink: #3a2e26;
+    --ink-soft: #6b5a4c;
+    --card: #fffdf9;
+    --focus: #8a5a1e;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(58, 46, 38, .06), 0 4px 14px rgba(58, 46, 38, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #2b231d;
+      --linen: #241d18;
+      --beige: #3a3029;
+      --sand: #4a3d33;
+      --wood: #c9a988;
+      --wood-dark: #e6d3bd;
+      --brass: #d0ad73;
+      --ink: #f3e9dc;
+      --ink-soft: #cdbba7;
+      --card: #33291f;
+      --focus: #e8c27f;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(1200px 500px at 50% -200px, var(--linen), transparent 70%),
+      var(--cream);
+    color: var(--ink);
+    font: 400 16px/1.5 "Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
+  .skip {
+    position: absolute; left: -9999px; top: 8px;
+    background: var(--card); color: var(--ink); padding: 8px 12px; border-radius: 8px; z-index: 10;
+  }
+  .skip:focus { left: 8px; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 32px 16px 40px; }
+
+  header { text-align: center; }
+  .mark {
+    width: 84px; height: 84px; margin: 0 auto 14px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--beige);
+    border: 2px solid var(--brass);
+    box-shadow: inset 0 0 0 5px var(--linen);
+    font: 600 38px/1 "Cormorant Garamond", Georgia, serif;
+    color: var(--wood-dark);
+  }
+  h1 {
+    margin: 0;
+    font: 600 clamp(28px, 7vw, 36px)/1.15 "Cormorant Garamond", Georgia, serif;
+    letter-spacing: .01em;
+    color: var(--wood-dark);
+  }
+  .tagline { margin: 8px auto 0; max-width: 32ch; color: var(--ink-soft); font-size: 15px; }
+  .social { display: flex; justify-content: center; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .social a {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 44px; padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--sand);
+    background: var(--card);
+    text-decoration: none; font-weight: 600; font-size: 14px;
+    color: var(--wood-dark);
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .social a:hover { border-color: var(--brass); }
+  .social svg { width: 18px; height: 18px; flex: none; }
+
+  main { margin-top: 30px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; }
+  .section-head::before, .section-head::after { content: ""; flex: 1; height: 1px; background: var(--sand); }
+  h2 {
+    margin: 0;
+    font: 600 22px/1.2 "Cormorant Garamond", Georgia, serif;
+    color: var(--wood-dark);
+    letter-spacing: .02em;
+  }
+  .search { margin: 0 0 14px; }
+  .search input {
+    width: 100%; min-height: 46px; padding: 10px 14px;
+    border-radius: var(--radius);
+    border: 1px solid var(--sand);
+    background: var(--card); color: var(--ink);
+    font: inherit;
+  }
+  .search input::placeholder { color: var(--ink-soft); }
+  .finds { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .find {
+    display: flex; align-items: center; gap: 12px;
+    min-height: 56px; padding: 12px 16px;
+    background: var(--card);
+    border: 1px solid var(--beige);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .find:hover { border-color: var(--brass); transform: translateY(-1px); }
+  .find:active { transform: translateY(0); }
+  .find-title { flex: 1; font-weight: 600; color: var(--ink); }
+  .badge {
+    flex: none; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--wood-dark); background: var(--beige); border-radius: 999px; padding: 3px 8px;
+  }
+  .shop { flex: none; display: inline-flex; align-items: center; gap: 4px; font-size: 13px; color: var(--wood); }
+  .shop svg { width: 14px; height: 14px; }
+  .empty { text-align: center; color: var(--ink-soft); padding: 12px 0; }
+
+  footer { margin-top: 34px; text-align: center; font-size: 13px; color: var(--ink-soft); }
+  footer p { margin: 6px 0; }
+  .disclosure { color: var(--ink); }
+  .dot { display: inline-block; width: 6px; height: 6px; background: var(--brass); border-radius: 50%; margin: 0 6px; vertical-align: middle; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .find:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#finds">Skip to latest finds</a>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">C</div>
+    <h1>Cozy Room Edit Finds</h1>
+    <p class="tagline">Affordable home decor for every room and every season</p>
+    <ul class="social" aria-label="Follow Cozy Room Edit Finds">
+      <li>
+        <a href="https://www.instagram.com/cozyroomeditfinds/" rel="noopener me" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram<span class="sr-only"> (opens in a new tab)</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.pinterest.com/cozyroomeditfinds" rel="noopener me" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.6 8.2c1-.6 2.6-.6 3.6.2 1.3 1 1.2 3.2-.1 4.2-.8.6-1.9.6-2.6.1M11.4 10.4 9.4 19.5"/></svg>
+          Pinterest<span class="sr-only"> (opens in a new tab)</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main id="finds">
+    <div class="section-head"><h2>Latest finds</h2></div>
+    <div class="search" id="search" hidden>
+      <label for="q" class="sr-only">Search finds</label>
+      <input id="q" type="search" placeholder="Search finds, like pumpkin or lamp" autocomplete="off">
+    </div>
+    <ul class="finds" id="list">
+      <li><a class="find" href="https://amzn.to/47YTTV1" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">White Pumpkin Set</span><span class="badge">New</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/3U4goV9" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Faux Olive Tree</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/3UstbRD" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Ceramic Ghost Set</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/3U3P89u" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Paper Floor Lamp</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4B9GZB3" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Ceramic Christmas Trees</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4yW8Z9Q" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Wooden Desk Organizer</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4zwFZVR" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Wooden Pumpkin Set</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4sbifo2" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Teak Bath Mat</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4s5l8Xm" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Spiderweb Mantle Scarf</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4hToWpW" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Vintage Glass Canister</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4s2GKmZ" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Cable Knit Tree Skirt</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4yibvG2" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Ceramic Bedside Lamps</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4yNbefF" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Eucalyptus Fall Wreath</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4dxQZtH" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Nesting Coffee Tables</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4ifvws3" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Velvet Pumpkins</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4z2sUUJ" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Waffle Shower Curtain</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4i1glSi" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Wood Bead Garland</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/3WkuFxH" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Farmhouse Lanterns</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/3Vwgju3" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Boucle Pillow Covers</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4iaHJOM" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Ghost Pillow Covers</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/4yDBNDL" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Sandstone Bathroom Set</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/47pZTpP" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Ivory Christmas Stockings</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+      <li><a class="find" href="https://amzn.to/3TJFtoc" rel="nofollow sponsored noopener" target="_blank"><span class="find-title">Ceramic Utensil Holder</span><span class="shop">Amazon<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (opens Amazon in a new tab)</span></a></li>
+    </ul>
+    <p class="empty" id="empty" hidden role="status">No finds match that search yet.</p>
+  </main>
+
+  <footer>
+    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>23 finds<span class="dot" aria-hidden="true"></span>Updated Oct 18, 2026</p>
+  </footer>
+</div>
+
+<script type="application/json" id="products-data">[{"title":"White Pumpkin Set (Amazon)","url":"https://amzn.to/47YTTV1"},{"title":"Faux Olive Tree (Amazon)","url":"https://amzn.to/3U4goV9"},{"title":"Ceramic Ghost Set (Amazon)","url":"https://amzn.to/3UstbRD"},{"title":"Paper Floor Lamp (Amazon)","url":"https://amzn.to/3U3P89u"},{"title":"Ceramic Christmas Trees (Amazon)","url":"https://amzn.to/4B9GZB3"},{"title":"Wooden Desk Organizer (Amazon)","url":"https://amzn.to/4yW8Z9Q"},{"title":"Wooden Pumpkin Set (Amazon)","url":"https://amzn.to/4zwFZVR"},{"title":"Teak Bath Mat (Amazon)","url":"https://amzn.to/4sbifo2"},{"title":"Spiderweb Mantle Scarf (Amazon)","url":"https://amzn.to/4s5l8Xm"},{"title":"Vintage Glass Canister (Amazon)","url":"https://amzn.to/4hToWpW"},{"title":"Cable Knit Tree Skirt (Amazon)","url":"https://amzn.to/4s2GKmZ"},{"title":"Ceramic Bedside Lamps (Amazon)","url":"https://amzn.to/4yibvG2"},{"title":"Eucalyptus Fall Wreath (Amazon)","url":"https://amzn.to/4yNbefF"},{"title":"Nesting Coffee Tables (Amazon)","url":"https://amzn.to/4dxQZtH"},{"title":"Velvet Pumpkins (Amazon)","url":"https://amzn.to/4ifvws3"},{"title":"Waffle Shower Curtain (Amazon)","url":"https://amzn.to/4z2sUUJ"},{"title":"Wood Bead Garland (Amazon)","url":"https://amzn.to/4i1glSi"},{"title":"Farmhouse Lanterns (Amazon)","url":"https://amzn.to/3WkuFxH"},{"title":"Boucle Pillow Covers (Amazon)","url":"https://amzn.to/3Vwgju3"},{"title":"Ghost Pillow Covers (Amazon)","url":"https://amzn.to/4iaHJOM"},{"title":"Sandstone Bathroom Set (Amazon)","url":"https://amzn.to/4yDBNDL"},{"title":"Ivory Christmas Stockings (Amazon)","url":"https://amzn.to/47pZTpP"},{"title":"Ceramic Utensil Holder (Amazon)","url":"https://amzn.to/3TJFtoc"}]</script>
+<script>
+  /* Optional search filter. The list above is plain HTML, so the page works without this script. */
+  (function () {
+    var box = document.getElementById("search");
+    var input = document.getElementById("q");
+    var items = Array.prototype.slice.call(document.querySelectorAll("#list > li"));
+    var empty = document.getElementById("empty");
+    if (!box || !input || items.length < 8) return;
+    box.hidden = false;
+    input.addEventListener("input", function () {
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      items.forEach(function (li) {
+        var match = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+        li.hidden = !match;
+        if (match) shown++;
+      });
+      empty.hidden = shown !== 0;
+    });
+  })();
+</script>
+</body>
+</html>
